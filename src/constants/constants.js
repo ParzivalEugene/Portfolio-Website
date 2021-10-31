@@ -1,7 +1,6 @@
 import {DiFirebase, DiPostgresql, DiPython, DiReact} from "react-icons/di";
 import {FiFigma} from "react-icons/fi";
-import {ListParagraph} from "../components/Technologies/TechnologiesStyles";
-
+import {LinkText, ListParagraph} from "../components/Technologies/TechnologiesStyles";
 
 export const HeroInfo = {
   title: "Michkov Eugene",
@@ -47,27 +46,32 @@ export const TechnologiesData = [
   {
     icon: <DiReact size="3rem"/>,
     title: "Front-End",
-    description: <ListParagraph>Experience with <br/> React.js and Next.js</ListParagraph>
+    description: <ListParagraph>Experience with <br/>
+      <LinkText href="https://reactjs.org" target="_blank">React.js</LinkText> and <LinkText href="https://nextjs.org/" target="_blank">Next.js</LinkText></ListParagraph>
   },
   {
     icon: <DiPostgresql size="3rem"/>,
     title: "Back-End",
-    description: <ListParagraph>Experience with <br/> Django and PostgreSQL</ListParagraph>
+    description: <ListParagraph>Experience with <br/>
+      <LinkText href="https://www.djangoproject.com/" target="_blank">Django</LinkText> and <LinkText href="https://www.postgresql.org/" target="_blank">PostgreSQL</LinkText></ListParagraph>
   },
   {
     icon: <FiFigma size="3rem"/>,
     title: "UI/UX",
-    description: <ListParagraph>Experience with <br/> Figma and AdobeXD</ListParagraph>
+    description: <ListParagraph>Experience with <br/>
+      <LinkText href="https://figma.com" target="_blank">Figma</LinkText> and <LinkText href="https://www.adobe.com/products/xd.html" target="_blank">AdobeXD</LinkText></ListParagraph>
   },
   {
     icon: <DiPython size="3rem"/>,
     title: "Python Development",
-    description: <ListParagraph>Experience with <br/> Python, DiscordAPI, NumPy</ListParagraph>
+    description: <ListParagraph>Experience with <br/>
+      <LinkText href="https://www.python.org/" target="_blank">Python</LinkText>, <LinkText href="https://discord.com/developers/docs/intro" target="_blank">DiscordAPI</LinkText>, <LinkText href="https://numpy.org/" target="_blank">NumPy</LinkText></ListParagraph>
   },
   {
     icon: <DiFirebase size="3rem"/>,
     title: "Data-Science",
-    description: <ListParagraph>Experience with <br/> Tensorflow, Pandas and Python libraries</ListParagraph>
+    description: <ListParagraph>Experience with <br/>
+      <LinkText href="https://www.tensorflow.org/" target="_blank">Tensorflow</LinkText>, <LinkText href="https://pandas.pydata.org/" target="_blank">Pandas</LinkText> and Python libraries</ListParagraph>
   },
 ]
 

@@ -1,6 +1,8 @@
 import Theme from '../styles/theme';
+import {Router} from "next/router";
+import withYM from "next-ym";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Theme>
@@ -9,4 +11,6 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default withYM("84702061", Router)(App);
  

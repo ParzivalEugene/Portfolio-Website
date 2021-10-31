@@ -131,3 +131,23 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+
+export const LinkText = styled.a`
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  &:hover {
+    text-decoration: underline;
+  }
+`
