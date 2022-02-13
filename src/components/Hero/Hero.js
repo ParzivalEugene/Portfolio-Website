@@ -21,9 +21,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-        <div className="hero-canvas-container">
-          <ShapeAnimation shape={"torus-knot"}/>
-        </div>
+      <div className="hero-canvas-container">
+        <ShapeAnimation shape={"torus-knot"}/>
+      </div>
     </div>
   );
 };

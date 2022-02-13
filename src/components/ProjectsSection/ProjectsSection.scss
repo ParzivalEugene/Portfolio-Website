@@ -21,6 +21,34 @@ $card-image-width-desktop: 58rem;
     flex-direction: row;
     align-items: center;
     width: $card-image-width-desktop;
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: $card-image-width-desktop;
+    }
+
+    @media screen and (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $card-image-width-desktop;
+  }
+
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
   }
 }
 
@@ -30,11 +58,19 @@ $card-image-width-desktop: 58rem;
   border-radius: $card-border-radius;
   background: App.$space;
   box-shadow: 0 0 4rem rgba(white, 0.25);
+
+  @media screen and (max-width: 640px) {
+    width: 90vw;
+  }
 }
 
 .project-card-banner {
   width: $card-image-width-desktop;
   border-radius: $card-border-radius $card-border-radius 0 0;
+
+  @media screen and (max-width: 640px) {
+    width: 90vw;
+  }
 }
 
 .project-card-info-container {
@@ -54,6 +90,10 @@ $card-image-width-desktop: 58rem;
 
 .project-card-text {
   font-size: 2.4rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 1.6rem;
+  }
 }
 
 .project-card-stack-buttons-container {
@@ -89,12 +129,23 @@ $card-image-width-desktop: 58rem;
   justify-content: space-between;
 
   &__one-item {
-    align-self: center;
+    align-self: stretch;
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    }
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
 .project-card-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: App.$white;
   color: App.$space;
   text-decoration: none;
@@ -109,5 +160,13 @@ $card-image-width-desktop: 58rem;
 
   &:active {
     box-shadow: none;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 2.4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.6rem;
   }
 }

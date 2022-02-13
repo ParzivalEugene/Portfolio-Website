@@ -80,3 +80,9 @@ export const ProjectsData = [
 ]
 
 export const AnimationType = "fade-up"
+
+export const DisplaySizes = {
+  mobile: 480,
+  tablet: 1024,
+  desktop: 1280
+}
