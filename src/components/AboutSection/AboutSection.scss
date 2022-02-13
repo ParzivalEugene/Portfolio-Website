@@ -1,0 +1,89 @@
+@use "src/App";
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 9rem 3rem;
+  gap: 8rem;
+  align-items: center;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 6rem;
+}
+
+.about-shape-container {
+  width: 100%
+}
+
+.about-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.about-header {
+  font-size: 6.4rem;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-text {
+  font-size: 2.4rem;
+}
+
+.about-text-link {
+  text-decoration: none;
+  color: App.$white;
+  font-weight: 700;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills-header {
+  font-size: 4.8rem;
+}
+
+.skills-links-container {
+  display: inline-flex;
+  gap: 3rem;
+}
+
+.about-link {
+  background: App.$white;
+  color: App.$space;
+  border-radius: 9rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  position: relative;
+  transition: .3s all ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 0 0 2rem rgba(App.$white, 50%);
+  }
+}
+
+.about-icon {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

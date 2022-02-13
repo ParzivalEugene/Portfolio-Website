@@ -1,0 +1,113 @@
+@use "src/App";
+
+$card-border-radius: 2.4rem;
+$card-image-width-desktop: 58rem;
+
+.project-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 6rem;
+
+  &__one-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: $card-image-width-desktop;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: $card-border-radius;
+  background: App.$space;
+  box-shadow: 0 0 4rem rgba(white, 0.25);
+}
+
+.project-card-banner {
+  width: $card-image-width-desktop;
+  border-radius: $card-border-radius $card-border-radius 0 0;
+}
+
+.project-card-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 3rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.project-card-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-card-text {
+  font-size: 2.4rem;
+}
+
+.project-card-stack-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: stretch;
+}
+
+.project-card-stack-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-card-stack-header {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.project-card-tags {
+  align-self: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.project-card-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__one-item {
+    align-self: center;
+    display: flex;
+  }
+}
+
+.project-card-button {
+  background: App.$white;
+  color: App.$space;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  font-size: 3.2rem;
+  border-radius: calc(#{$card-border-radius} / 2);
+  transition: .3s all ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 0 0 2rem rgba(App.$white, 50%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}

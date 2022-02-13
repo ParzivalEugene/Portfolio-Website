@@ -1,0 +1,58 @@
+@use "src/App";
+
+.footer-container {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-coded-by {
+  font-size: 1.6rem;
+  justify-self: start;
+}
+
+.footer-coded-by-link {
+  color: App.$white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 1.6rem;
+  color: App.$white;
+}
+
+.footer-social-icons-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-self: end;
+}
+
+.footer-social-icon-container {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background: App.$white;
+  border-radius: 9rem;
+  color: App.$space;
+  transition: .3s all ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 0 0 2rem rgba(App.$white, 50%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.footer-social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

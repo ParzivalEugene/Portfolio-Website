@@ -1,0 +1,69 @@
+@use "src/App";
+
+.navbar-logo {
+  justify-self: start;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: App.$white;
+  font-weight: 700;
+}
+
+.navbar-tabs {
+  display: flex;
+  gap: 9rem;
+}
+
+.navbar-link {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: App.$sub;
+  transition: .3s ease-in-out all 0s;
+
+  &:hover {
+    color: App.$white;
+  }
+
+  &__active {
+    font-weight: 700;
+    color: App.$white;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: .3s ease-in-out all 0s;
+  }
+}
+
+.navbar-button {
+  position: relative;
+  justify-self: end;
+  background: App.$white;
+  color: App.$space;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: .3s all ease-in-out 0s;
+
+  border-radius: 3.2rem;
+
+  &:hover {
+    color: transparent;
+    box-shadow: 0 0 2rem rgba(App.$white, 50%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:hover .navbar-button-icon {
+    color: App.$space;
+    top: 50%;
+  }
+}
+
+.navbar-button-icon {
+  transition: .3s all ease-in-out 0s;
+  position: absolute;
+  pointer-events: none;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

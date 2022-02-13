@@ -1,0 +1,37 @@
+@use "src/App";
+
+.hero-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.hero-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 66rem;
+}
+
+.hero-header {
+  font-size: 6.4rem;
+}
+
+.hero-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-paragraph {
+  font-size: 3.2rem;
+
+  strong {
+    color: App.$white;
+  }
+}
+
+.hero-canvas-container {
+  width: 100%;
+}
