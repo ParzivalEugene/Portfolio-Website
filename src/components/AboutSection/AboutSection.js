@@ -56,9 +56,9 @@ const AboutSection = () => {
         <div className="skills-card">
           <h2 className="skills-header">Front-end</h2>
           <p className="about-text">
-            I know how to handle <AboutTextLink href={links.react} text="React" /> functions.js, create interactive
-            pages and optimize information. With <AboutTextLink href={links.three} text="Three.js" /> can create 3d
-            scenes, also familiar with <AboutTextLink href={links.next} text="Next.js" /> and {" "}
+            I know how to handle <AboutTextLink href={links.react} text="React" /> functions. I easily make up
+            interactive pages and optimize information. With <AboutTextLink href={links.three} text="Three.js" /> can
+            create 3d scenes, also familiar with <AboutTextLink href={links.next} text="Next.js" /> and {" "}
             <AboutTextLink href={links.scss} text="SCSS" />
           </p>
           <div className="skills-links-container">
@@ -85,7 +85,7 @@ const AboutSection = () => {
         </div>
 
         <div className="skills-card">
-          <h2 className="skills-header">Front-end</h2>
+          <h2 className="skills-header">UI/UX</h2>
           <p className="about-text">
             I have good design skills in <AboutTextLink href={links.figma} text="Figma"/>. All my sites were
             primarily made in this app
