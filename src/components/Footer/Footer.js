@@ -24,7 +24,7 @@ const Footer = () => {
           rel="noreferrer"
         >ParzivalEugene</a>
         </p>
-        <p className="footer-copyright">© 2022 Michkov Eugene. All Rights Reserved.</p>
+        <p className="footer-copyright">© 2023 Michkov Eugene. All Rights Reserved.</p>
         <div className="footer-social-icons-container">
           <a
             className="footer-social-icon-container"
